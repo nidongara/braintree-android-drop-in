@@ -46,9 +46,9 @@ public class SupportedPaymentMethodsAdapter extends BaseAdapter {
         if (!unionpaySupported) {
             supportedCardTypes.remove(PaymentMethodType.UNIONPAY.getCanonicalName());
         }
-        if (supportedCardTypes.size() > 0) {
-            mAvailablePaymentMethods.add(PaymentMethodType.UNKNOWN);
-        }
+//        if (supportedCardTypes.size() > 0) {
+//            mAvailablePaymentMethods.add(PaymentMethodType.UNKNOWN);
+//        }
 
         if (androidPayEnabled) {
             if (dropInRequest.isGooglePaymentEnabled()) {
